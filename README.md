@@ -1,3 +1,8 @@
+# PIG LATIN TRANSLATOR
+
+## _Authors: Krista Rutz, Jack Dunning, Steven Fleming
+
+This program allows users to translate words or phrases from English to Pig Latin.
 
 ### SPECS
 
@@ -50,12 +55,7 @@ f&#*
 
 
 
- -retain capitalization
  -know where punctuation is
- -know where spaces are
- -know what the beginning of a word is (single word)
  -know what the end of a word is (multiple words)
- -recognize alphabet characters
  -recognize non-alphabet characters 
-   -symbols "in" words: - '
    -symbols that aren't in words: . ? ! / () " ' : ; , & 
