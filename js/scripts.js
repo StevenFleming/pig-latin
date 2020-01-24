@@ -2,18 +2,19 @@
 
 var vowelRE = /[aeiou]/i;
 var vowelPlusYRE = /[aeiouy]/i;
-//var wordChar = /w/i;
+//var wordChar = /^[\\w'-]/i;
 var ignoredChars = /\W/;
 
 function translateToPL(str){
   var wordSplit = str.split(" ");
   var newSentence = [];
   for(var i = 0; i < wordSplit.length; i++) {
-    if (wordSplit[i].match(ignoredChars)){
-      return "Error: please use only word characters."
-    } else {
+    // if (wordSplit[i].match(ignoredChars)){
+    //   return "Error: please use only word characters."
+    // } 
+    //else {
       newSentence.push(translateWordToPL(wordSplit[i]));
-    }
+    //}
   }
   return newSentence.join(" ");
 }
